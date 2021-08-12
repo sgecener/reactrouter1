@@ -1,6 +1,5 @@
 import * as ActionTypes from './ActionTypes';
-import { CAMPSITES }from '../shared/campsites';
-import { co } from 'co';
+import { CAMPSITES } from '../shared/campsites';
 
 export const addComment = (campsiteId, rating, author, text) => ({
     type: ActionTypes.ADD_COMMENT,
@@ -30,7 +29,7 @@ export const campsitesFailed = errMess => ({
     payload: errMess
 });
 
-export const addCampistes = campsites => ({
+export const addCampsites = campsites => ({
     type: ActionTypes.ADD_CAMPSITES,
     payload: campsites
 });

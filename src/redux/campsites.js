@@ -1,4 +1,3 @@
-import { Action } from 'argparse';
 import * as ActionTypes from './ActionTypes';
 
 export const Campsites = (state = {
