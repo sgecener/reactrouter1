@@ -48,17 +48,17 @@ class CommentForm extends Component {
                             <LocalForm onSubmit={this.handleSubmit}>
                                 <div className="form-group">
                                     <Label htmlFor='rating'>Rating</Label>
-                                        <Control.select model=".rating" id="rating" name="rating" className="form-control">
+                                        <Control.SELECT model=".rating" id="rating" name="rating" className="form-control">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
                                             <option>4</option>
                                             <option>5</option>
-                                        </Control.select>
+                                        </Control.SELECT>
                                 </div>
                                 <div className="form-group">
                                     <Label htmlFor="author">Your Name</Label>
-                                        <Control.text model=".author" id="author" name="author" className="form-control"
+                                        <Control.TEXT model=".author" id="author" name="author" className="form-control"
                                             validators={{
                                                 required,
                                                 minLength: minLength(2),
@@ -78,8 +78,8 @@ class CommentForm extends Component {
                                 </div>
                                 <div className="form-group">
                                     <Label htmlFor="text">Comment</Label>
-                                        <Control.textarea model=".text" id="text" name="text" className="form-control" rows="6">
-                                        </Control.textarea>
+                                        <Control.TEXTAREA model=".text" id="text" name="text" className="form-control" rows="6">
+                                        </Control.TEXTAREA>
                                 </div>
                                 <Button outline type="submit" value="submit" color="primary">Submit</Button>
                             </LocalForm>
