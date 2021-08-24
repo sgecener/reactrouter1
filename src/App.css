@@ -1,14 +1,14 @@
-body { 
-  font-family: "Open-Sans", sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 h1, h2, h3, .card-body>.card-title {
-    font-family: "Lobster", cursive;
+  font-family: "Lobster", cursive ;
 }
 
 .card-title {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.24rem;
 }
 
 h2 {
@@ -24,6 +24,17 @@ h2 {
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 200px;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
 }
 
 .site-footer {
@@ -48,14 +59,13 @@ h2 {
 
 .page-enter {
   opacity: 0;
-  transform: translateX(-100%);
 }
 
 .page-enter-active {
   opacity: 1;
-  transform: translateX(0%);
   transition: 300ms ease-out;
 }
+
 .page-exit {
   opacity: 1;
 }
@@ -64,5 +74,3 @@ h2 {
   opacity: 0;
   transition: 300ms ease-in;
 }
-  
-
